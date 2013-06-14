@@ -17,6 +17,10 @@
 
 A Class is a "blueprint", they represent a certain entity, typically nouns.
 
+    class Person
+      attr_accessor :name, :birthday, :gender, :eye_color, :height
+    end
+
 ---
 
 ##Quiz
