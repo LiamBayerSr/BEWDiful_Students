@@ -163,40 +163,44 @@ Instance = An actual House
 
 ##Mixins
 
-	module Upvotable
-		def upvote!
-    		@upvote += 1
-    	end
+```
 
-    	def downvote!
-    		@upvote -= 1
-    	end
+module Upvotable
+	def upvote!
+		@upvote += 1
 	end
 
-
-	class Photo
-		attr_reader :photographer, :resolution, :upvotes
-
-		include Upvotable
-
-		def initialize(photographer, resolution)
-    		@photographer = photographer
-    		@resolution = resolution
-    		@upvotes = 1
-    	end
+	def downvote!
+		@upvote -= 1
 	end
+end
 
-	class Story
-		attr_reader :title, :author, :upvotes
 
-		include Upvotable
+class Photo
+	attr_reader :photographer, :resolution, :upvotes
 
-		def initialize(title, author)
-    		@title = title
-    		@author = author
-    		@upvotes = 1
-    	end
-    end
+	include Upvotable
+
+	def initialize(photographer, resolution)
+		@photographer = photographer
+  	@resolution = resolution
+		@upvotes = 1
+	end
+end
+
+class Story
+	attr_reader :title, :author, :upvotes
+
+	include Upvotable
+
+	def initialize(title, author)
+  		@title = title
+  		@author = author
+  		@upvotes = 1
+	end
+end
+
+```
 
 ---
 
@@ -214,23 +218,31 @@ Instance = An actual House
 
 What if we wanted to have two bat classes.
 
-    class Bat
-    	def fly!
-    		puts "So free.. so serene..."
-    	end
-    end
+
+```
+class Bat
+	def fly!
+		puts "So free.. so serene..."
+	end
+end
+
+```
 
 
 # Somewhere else in your code
 
-    class Bat
-    	def made_of
-    		"wood"
-    	end
-    end
 
-    slugger = Bat.new
-    slugger.fly!
+```
+class Bat
+	def made_of
+		"wood"
+	end
+end
+
+slugger = Bat.new
+slugger.fly!
+
+```
 
 
 
@@ -240,26 +252,28 @@ What if we wanted to have two bat classes.
 ##Modules
 ###Namespace It
 
+```
+module Animal
+	class Bat
+		def fly!
+			puts "So free.. and blind"
+		end
+	end
+end
 
-    module Animal
-    	class Bat
-    		def fly!
-    			puts "So free.. and blind"
-    		end
-    	end
-    end
+Animal::Bat.new
 
-	  Animal::Bat.new
+module Baseball
+	class Bat
+		def made_of
+			"wood"
+		end
+	end
+end
 
-  	module Baseball
-  		class Bat
-    		def made_of
-    			"wood"
-    		end
-    	end
-  	end
+Baseball::Bat.new
 
-  	Baseball::Bat.new
+```
 
 
 ---
