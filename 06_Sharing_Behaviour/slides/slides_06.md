@@ -17,9 +17,12 @@
 
 A Class is a "blueprint", they represent a certain entity, typically nouns.
 
-    class Person
-      attr_accessor :name, :birthday, :gender, :eye_color, :height
-    end
+```
+class Person
+  attr_accessor :name, :birthday, :gender, :eye_color, :height
+end
+
+```
 
 ---
 
@@ -41,14 +44,17 @@ Instance = An actual House
 
 ---
 
+```
 
-    class Person
-      attr_accessor :name
+class Person
+  attr_accessor :name
 
-      def initialize(new_name)
-        @name = new_name
-      end
-    end
+  def initialize(new_name)
+    @name = new_name
+  end
+end
+
+```
 
 
 ---
