@@ -41,6 +41,7 @@ Instance = An actual House
 
 ---
 
+
     class Person
       attr_accessor :name
 
