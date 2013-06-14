@@ -162,6 +162,7 @@ Instance = An actual House
 
 
 ##Mixins
+
 	module Upvotable
 		def upvote!
     		@upvote += 1
@@ -176,7 +177,6 @@ Instance = An actual House
 	class Photo
 		attr_reader :photographer, :resolution, :upvotes
 
-    # Mixin!!
 		include Upvotable
 
 		def initialize(photographer, resolution)
@@ -189,7 +189,6 @@ Instance = An actual House
 	class Story
 		attr_reader :title, :author, :upvotes
 
-    # Mixin!!
 		include Upvotable
 
 		def initialize(title, author)
