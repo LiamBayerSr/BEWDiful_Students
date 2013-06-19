@@ -20,8 +20,9 @@
 ##Rails 4
 ###Are You Ready?
 
-	$	gem install rails --version 4.0.0.rc2 --no-ri --no-rdoc
-	$	rails -v
+`gem install rails `--version 4.0.0.rc2 --no-ri --no-rdoc`
+
+`rails -v`
 
 
 * If you don't see rails 4 returned let us know
