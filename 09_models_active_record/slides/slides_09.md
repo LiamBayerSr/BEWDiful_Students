@@ -48,6 +48,8 @@ Windows
 
 	:(
 
+---
+
 ## House Keeping
 ### Sublime Text 2 via the command line.
 
@@ -56,6 +58,8 @@ Now in your terminal, you can change directories into a project folder and run:
 	subl .
 
 This will open the application folder in sublime.
+
+---
 
 
 ##Database
