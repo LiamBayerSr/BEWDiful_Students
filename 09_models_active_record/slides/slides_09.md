@@ -279,7 +279,7 @@ Delete
 
 __shirts_controller.rb__
 
-		@shirts = Shirts.all #Returns an array of Shirts (array of hashes)
+		@shirts = Shirts.all #Returns an array of Shirts (array of shirts)
 
 ---
 
