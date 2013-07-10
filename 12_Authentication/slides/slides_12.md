@@ -204,7 +204,10 @@ We wish you luck.
 
 *	Adding Gems to the Gemfile
 
-		gem 'devise', git: "https://github.com/plataformatec/devise.git", branch:  "rails4"
+
+```
+	gem 'devise', git: "https://github.com/plataformatec/devise.git", branch:  "rails4"
+```
 
 ---
 
@@ -214,9 +217,11 @@ We wish you luck.
 
 *	Using Devise
 
-		rails g devise:install # creates all the devise Controllers, views and initializers
-		rails g devise user    # creates User model (or modifies it if it exists)
-		rake db:migrate        # Let's Go!
+```
+rails g devise:install # creates all the devise Controllers, views and initializers
+rails g devise user    # creates User model (or modifies it if it exists)
+rake db:migrate        # Let's Go!
+```
 
 
 ---
