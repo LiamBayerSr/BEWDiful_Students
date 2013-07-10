@@ -218,9 +218,9 @@ We wish you luck.
 *	Using Devise
 
 ```
-rails g devise:install # creates all the devise Controllers, views and initializers
-rails g devise user    # creates User model (or modifies it if it exists)
-rake db:migrate        # Let's Go!
+rails g devise:install    creates all the devise Controllers, views and initializers
+rails g devise user       creates User model (or modifies it if it exists)
+rake db:migrate
 ```
 
 
